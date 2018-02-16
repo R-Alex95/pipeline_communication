@@ -1,6 +1,6 @@
-###Proccess communication & synchronization via pipeline.
+### Proccess communication & synchronization via pipeline.
 
-####This project is about making a server-client simulation.
+#### This project is about making a server-client simulation.
 
 ## Compile
 
@@ -18,10 +18,21 @@ Invocation:
 
 Board and boardpost are communicating and sending bits via pipelines.
 First run board.cpp and then run boardpost.cpp
-Server - client communication must begin by creating a channel on server-side via **createchannel channel_id(integer) channel_name**.Then you can send messages or files to the server  **write channel_id your_message** or **send channel_id path_to_file** accordingly.File is saved on the server_path.Lastly client can see what messages has been written to what channel via the **list** command.
+Server - client communication must begin by creating a channel on server-side via :
+
+**createchannel channel_id(integer) channel_name**.
+
+Then you can send messages or files to the server with :
+
+**write channel_id your_message** or **send channel_id path_to_file** 
+
+accordingly.File is saved on the server_path.Lastly client can see what messages has been written to what channel via the **list** command.
 
 Other commands that board-server can run : 
+
 -getmessages (prints all the messages/files of all channels)
+
 -exit (exit server and can reconnect later if given the correct path-for-pipeline-folder path)
+
 -shutdown (exit server and deletes all data automatically)
 
