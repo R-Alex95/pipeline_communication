@@ -31,7 +31,7 @@ Then you can send messages or files to the server with :
 accordingly.File is saved on the server_path.Lastly client can see what messages has been written to what channel via the **list** command.
 
 
-###### Other commands that board-server can run : 
+##### Other commands that board-server can run : 
 
 -getmessages (prints all the messages/files of all channels)
 
