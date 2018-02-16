@@ -16,6 +16,8 @@ Invocation:
 
 **Path-for-pipeline-folder is created automatically if not exist.Must be the same to both invocations.**
 
+## CLI
+
 Board and boardpost are communicating and sending bits via pipelines.
 First run board.cpp and then run boardpost.cpp
 Server - client communication must begin by creating a channel on server-side via :
@@ -28,7 +30,8 @@ Then you can send messages or files to the server with :
 
 accordingly.File is saved on the server_path.Lastly client can see what messages has been written to what channel via the **list** command.
 
-Other commands that board-server can run : 
+
+###### Other commands that board-server can run : 
 
 -getmessages (prints all the messages/files of all channels)
 
